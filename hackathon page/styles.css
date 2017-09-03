@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Nordea'; /*a name to be used later*/
+    src: url('font/Web/NordeaSansLarge-Regular.ttf'); /*URL to font*/
+}
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Nordea;
+}
+ 
+.inner-wrapper {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 1px 10px 15px 10px;
+}
+ 
+.inner-wrapper h1 {
+  color: #0000a0;
+  text-align: center;
+}
+ 
+#section-who {
+  margin: 0;
+  padding: 0;
+  background-color: #fdece4;
+}
+ 
+#section-who {
+  /* background-color: #e5f2ff; */
+  background-color: #fdece4;
+}
+ 
+#section-quiz {
+  /* background-color: #fdece4; */
+  /* background-color: #e5f2ff; */
+  background-color: #ffffff;
+}
+ 
+.columns {
+  overflow: hidden;
+  clear: both;
+}
+ 
+.column {
+  float: left;
+  margin: 0 auto;
+  width: 33%;
+}
+ 
+.column h2 {
+  text-align: center;
+  color: #0000a0;
+}
+ 
+.column img {
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+}
+ 
+#section-who a, #section-quiz a {
+  width: 120px;
+  margin: 0px auto;
+  padding: 15px 35px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #40bfa3;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+}
