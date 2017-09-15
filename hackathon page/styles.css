@@ -10,14 +10,17 @@ body {
 }
  
 .inner-wrapper {
-  width: 1000px;
+  width: 100%;
   margin: 0px auto;
-  padding: 1px 10px 15px 10px;
 }
- 
+ .inner-content{
+  width: 90%;
+  margin: 0 auto;
+ }
 .inner-wrapper h1 {
-  color: #0000a0;
+  color: #f0c1ae;
   text-align: center;
+  font-size: 80px;
 }
  
 #section-who {
@@ -59,16 +62,6 @@ body {
   display: block;
 }
  
-#section-who a, #section-quiz a {
-  width: 120px;
-  margin: 0px auto;
-  padding: 15px 35px;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #40bfa3;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 25px;
+canvas{
+  cursor: url('pics/cursor.png'),auto;
 }
