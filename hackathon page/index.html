@@ -32,6 +32,11 @@
   text-decoration: none;
   display: inline-block;
   width: 150px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hack-links a:hover{
+  color: #3399ff;
 }
 .logo-img{
   height:40px;
@@ -96,6 +101,7 @@
   width: 80%;
   }
 .quote-setence{
+  padding-top: 40px;
   font-size: 70px;
   line-height: 120px;
 }
@@ -262,11 +268,11 @@ a.active{
         <img src="pics/hack.PNG" class="logo-img">
         <div class="hack-links">
           <ul>
-            <li><a href="#section-about" >About</a></li>
-            <li><a href="#section-attendee">Attendees</a></li>
-            <li><a href="#section-location">Location</a></li>
-            <li><a href="#section-schedule">Schedule</a></li>
-            <li><a href="#section-contact">Contact</a></li>
+            <li><a name="#section-about" >About</a></li>
+            <li><a name="#section-attendee">Attendees</a></li>
+            <li><a name="#section-location">Location</a></li>
+            <li><a name="#section-schedule">Schedule</a></li>
+            <li><a name="#section-contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -288,7 +294,7 @@ a.active{
           </div>
           <div class="about-content">
               <div class="about-image-section">
-                  <img class="about-image" src="pics/business.jpg">
+                  <img class="about-image" src="pics/collabration.jpg">
               </div>
               <div class="about-phrase">
                   <div class="about-phrase-title">About</div>
@@ -406,7 +412,7 @@ a.active{
               </div>
               <div class="CIO-quote-column">
                   <div class="CIO-quote-setence">
-                      “Working as a team, working as a group on something that is a bit more radical, and something that is not your day-to-day job is very useful. I think that people who tend to come out for a hackathon are the ones that are inspired by innovation anyway.”
+                      "Working as a team, working as a group on something that is a bit more radical, and something that is not your day-to-day job is very useful. I think that people who tend to come out for a hackathon are the ones that are inspired by innovation anyway."
                   </div>
                   <div class="CIO-name">
                       -Alan Eddie, CIO
@@ -454,7 +460,7 @@ $(document).ready(function() {
       }
     });
     $(this).addClass('active');
-    var currentHref = $(this).attr('href');
+    var currentHref = $(this).attr('name');
     $('html, body').animate({
         scrollTop: $(currentHref).offset().top-60
     }, 10);
