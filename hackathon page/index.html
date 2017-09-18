@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
   <head>
-    <title>#hack18 mockup</title>
+    <title>#hack18</title>
     <link rel="stylesheet" href="styles.css">
     <style>
 .navbar-fixed {
     top: 0;
     z-index: 100;
   position: fixed;
-    width: 100%;
 }
 
 #nav_bar {
@@ -16,6 +15,7 @@
   height: 60px;
   top:0px;
   width: 100%;
+  min-width: 1180px;
 }
 
 .hack-links ul {
@@ -39,8 +39,8 @@
   color: #3399ff;
 }
 .logo-img{
-  height:40px;
-  padding:10px 20px;
+  height:30px;
+  padding:15px 20px;
   display: inline-block;
 }
 .hack-links{
@@ -82,10 +82,15 @@
   line-height: 50px;
   color: #ffffff;
 }
+.signup-button:hover{
+  background-color: #0000ff;
+  color: #3399ff;
+}
 #video-sharing{
   width: 100%;
   height:500px;
   background-color: #0000ff;
+  clear: both;
 }
 #quote,#video-section{
   width: 49%;
@@ -110,7 +115,6 @@
 }
 .location-title,.schedule-title
 {
-  margin-top: 50px;
   text-align: center;
   font-weight: bold;
   font-size: 80px;
@@ -145,6 +149,7 @@
   width: 100%;
   clear: both;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 .about-image{
   width: 80%;
@@ -156,7 +161,7 @@
 .about-phrase-title{
   margin-top: 60px;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 80px;
   line-height: 150px;
   color: #FBDAC9;
 }
@@ -260,19 +265,25 @@ width: 65%;
 a.active{
   color: #3399ff;
 }
+.gap-block
+{
+  width: 100%;
+  height: 60px;
+}
   </style>
   </head>
   <body>
 
       <nav id='nav_bar'>
+        <img src="pics/Nordea-logo.svg" class="logo-img"> 
         <img src="pics/hack.PNG" class="logo-img">
         <div class="hack-links">
           <ul>
-            <li><a name="#section-about" >About</a></li>
-            <li><a name="#section-attendee">Attendees</a></li>
-            <li><a name="#section-location">Location</a></li>
-            <li><a name="#section-schedule">Schedule</a></li>
-            <li><a name="#section-contact">Contact</a></li>
+            <li><a href="#section-about-link" id="about-link" name="about" class="active">About</a></li>
+            <li><a href="#section-attendee-link" id="attendee-link" name="attendee">Attendees</a></li>
+            <li><a href="#section-location-link" id="location-link" name="location">Location</a></li>
+            <li><a href="#section-schedule-link" id="schedule-link" name="schedule">Schedule</a></li>
+            <li><a href="#section-contact-link" id="contact-link" name="contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -280,13 +291,14 @@ a.active{
 
       <div id="section-frontpage">
         <div class="frontpage-text">
-          <div class="frontpage-title section-title">#Hack18</div>
+          <div class="frontpage-title section-title">#HACK18</div>
           <div class="frontpage-time">January 2018</div>
           <div class="frontpage-location">Somewhere in Poland</div>
           <div><a href="#" class="signup-button">Sign up</a></div>
         </div>
       </div>
 
+      <div id="section-about-link" style=" background-color: #FBDACA;"></div>
       <div id="section-about">
           <div class="about-intro">
               <div class="about-title">A hackathon for everyone!</div>
@@ -299,7 +311,29 @@ a.active{
               <div class="about-phrase">
                   <div class="about-phrase-title">About</div>
                   <div class="about-phrase-content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl ante, aliquam ut mattis at, tristique vel lorem. Donec et mauris in lectus congue laoreet eu ac dui. Proin porta, turpis mattis bibendum ultricies, mauris massa fermentum justo, vitae tincidunt leo nulla nec enim. Nulla facilisi. Morbi in molestie magna. Quisque vel justo lobortis leo posuere aliquam. Suspendisse eu ultricies orci. Integer posuere justo et nulla iaculis condimentum. Quisque scelerisque lectus vitae lorem maximus tempor. Nullam nibh arcu, dignissim in eleifend id, vulputate non nisl. Etiam interdum consectetur
+                     <h3> Let's collaborate together!</h3>
+
+                      <p>Are you an employee within the Trading Technology department? Do you have a great idea that you would like to develop further by collaborating with your collegues? Then #HACK18 is the challenge for you!</p>
+
+
+
+
+                     <h3>  Why should I join?</h3>
+
+                      <p>The #HACK18 is an event where you, as a Trading Technology employee, have the opportunity to work on an idea that really excites you! #HACK18 is X days full of great and engaged colleagues working towards innovative solutions on improving processes within Nordea. You and your colleagues will have approximately XX hours to collaborate intensively and work on a prototype or proof of concept for your idea. At the end of the second day, each team will present a solutions to members of Nordea’s senior management, who will assess the prototypes/proof of concepts and evaluate the potential of the idea to be succesfully implemented in Nordea.</p>
+
+
+
+
+                      <h3> And if I win?</h3>
+
+                      <p>The winning team takes home the #HACK18 statuett, the honour, and potentially also funding to proceed with the idea!
+What to do if I have a great idea that I would like to work on during #HACK18?
+One news compared to previous years is, except from the location of the event, is that all ideas will be presented before the actual #HACK18 event. If you have a great idea, please describe it in the Nordea Idea Portal (LINK) and use the hashtag #HACK18. Approximately two weeks before the event, everyone that have signed up for the #HACK18 event will be invited to an idea-sharing session where all ideas from the #HACK18 marked ideas in the Idea Portal will be presented. This makes it possible for all of you participants to start to form teams, begin to look into what cool technolgy you could use to find the best solution of an idea, or to just to be inspired and see what all other teams are going to work on. It is not necessary for all participants to provide ideas, and several teams could work on solving the same issue.
+There are essentially no limits to what you can work on, as long as you follow these three guidelines:
+Work on something that will add value to Nordea.
+Dedicate yourself 100% to collaborate with your team. Focus on the task at hand!
+At the end of the second day, you demonstrate what your team has come up with.</p>
                   </div>
               </div>
           </div>
@@ -314,23 +348,24 @@ a.active{
           </div>
       </div>
 
+      <div class="gap-block" id="section-attendee-link"></div>
+
       <div id="section-attendee">
           <div class="inner-wrapper">
               <div class="inner-content">
                   <!-- <div style="margin: 15px auto 0px auto; width: 120px"><img src="icons/filled-id-card-2.png" alt="Who?" style="width: 100%"></div> -->
-                  <h1>Attendees</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl ante, aliquam ut mattis at, tristique vel lorem. Donec et mauris in lectus congue laoreet eu ac dui. Proin porta, turpis mattis bibendum ultricies, mauris massa fermentum justo, vitae tincidunt leo nulla nec enim. Nulla facilisi. Morbi in molestie magna. Quisque vel justo lobortis leo posuere aliquam. Suspendisse eu ultricies orci. Integer posuere justo et nulla iaculis condimentum. Quisque scelerisque lectus vitae lorem maximus tempor. Nullam nibh arcu, dignissim in eleifend id, vulputate non nisl. Etiam interdum consectetur metus, quis scelerisque orci rhoncus at. Vestibulum id suscipit nisl.</p>
-                  <p>Nullam suscipit urna non elit congue fermentum. Sed imperdiet imperdiet placerat. Praesent varius vulputate purus in eleifend. Nullam nunc odio, pulvinar ac risus in, pellentesque sagittis odio. Integer sollicitudin velit efficitur lobortis viverra. Cras et libero ut mi cursus posuere. Fusce dictum id massa sed suscipit. Integer laoreet tristique massa, lacinia congue felis suscipit eget. Fusce eleifend est ipsum, sit amet iaculis sem congue vel.</p>
+                  <h1 style="margin-top: 0px;">Attendees</h1>
+<p>#HACK18 is for everyone working within the Trading Technolgy department in Poland or one of our Nordic countries (Denmark, Finland, Norway or Sweden).
+Is your daily role to be a developer, project manager, analyst, architect, subject matter expert or maybe to be an agile coach? Do you want to network, meet collegues from other teams and solve problems together? Develop yourself and maybe try a role you are usually not working in? Maybe you are a developer who enjoy being challenged on your programming skills and wants to get the possibility to have X full days working on a new cool technolgy? In #HACK18 we need the structured skills from our project managers, the analytical skills from our analysts, and the coding skills from out developers. Everyone from Trading Technology is invited, and just as in our daily work, we need everyones skills and brains to collaborate to be able to come up with the coolest ideas in XX hours! As long as you want to work on an idea through collaboration with your collegues, you are welcome to join. Let's collaborate together!</p>
                   <div class="columns">
                       <div class="column">
                           <img src="pics/dev_analyst.jpg" alt="Developers & Analysts">
                           <h2>Dev or Analyst</h2>
                           <ul>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                              <li>Duis pretium ligula nec neque dapibus, vitae tincidunt metus suscipit.</li>
-                              <li>Sed id leo ac justo dictum dignissim.</li>
-                              <li>Duis efficitur nisl eu erat venenatis condimentum.</li>
-                              <li>Ut vel purus venenatis, dictum arcu vel, euismod purus.</li>
+                             <li>  Enjoy being tested on your programming skills</li>
+                             <li>  Want to develop your ideas?</li>
+                             <li>  SOMETHING ABOUT ANALYSTS.</li>
+                             <li>  Want to work with the newest technology</li>
                           </ul>
                       </div>
                       <div class="column">
@@ -361,14 +396,18 @@ a.active{
           </div>
       </div>
 
-      <div id="section-location">
+      <div class="gap-block" id="section-location-link"></div>
+
+      <div id="section-location" style="min-height: 150px;">
           <div class="inner-content">
               <div class="location-title">Location</div>
               <div class="location-content">The location and venue will be announcedsoon, check this site for updates.</div>
           </div>  
       </div>
 
-      <div id="section-schedule">
+      <div class="gap-block" id="section-schedule-link"></div>
+
+      <div id="section-schedule" >
           <div class="inner-content">
               <div class="schedule-title">Schedule</div>
               <div class="schedule-content">
@@ -404,7 +443,7 @@ a.active{
               </div>
           </div>
       </div>
-
+      <div class="gap-block" id="section-contact-link"></div>
       <div id="section-contact">
           <div class="CIO-quote">
               <div class="CIO-image-column">
@@ -443,30 +482,78 @@ a.active{
 <script type="text/javascript">
   
 $(document).ready(function() {
+
+  var aboutOffset = getSectionOffsetID("about");
+  var attendeeOffset = getSectionOffsetID("attendee");
+  var locationOffset = getSectionOffsetID("location");
+  var scheduleOffset = getSectionOffsetID("schedule");
+  var contactOffset = getSectionOffsetID("contact");
+
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 60) {
+    var topOffset = $(window).scrollTop();
+    if (topOffset > 60) {
       $('#nav_bar').addClass('navbar-fixed');
+      var topOffsetNavBar= topOffset;
+      if(topOffsetNavBar<aboutOffset)
+      {
+        activeLink("#about-link");
+      }
+      if(topOffsetNavBar>=aboutOffset)
+      {
+        activeLink("#about-link");
+      }
+      if(topOffsetNavBar>=attendeeOffset)
+      {
+        activeLink("#attendee-link");
+      }
+      if(topOffsetNavBar>=locationOffset)
+      {
+        activeLink("#location-link");
+      }
+      if(topOffsetNavBar>=scheduleOffset)
+      {
+        activeLink("#schedule-link");
+      }
+      if(topOffsetNavBar>contactOffset)
+      {
+        activeLink("#contact-link");
+      }
     }
-    if ($(window).scrollTop() < 61) {
+    if (topOffset < 61) {
       $('#nav_bar').removeClass('navbar-fixed');
     }
   });
+  $( window ).resize(function() {
+      aboutOffset = getSectionOffsetID("about");
+      attendeeOffset = getSectionOffsetID("attendee");
+      locationOffset = getSectionOffsetID("location");
+      scheduleOffset = getSectionOffsetID("schedule");
+      contactOffset = getSectionOffsetID("contact");
+  });
+  // $(".hack-links a").click(function(){
+  //   event.preventDefault();
 
-  $(".hack-links a").click(function(){
-    event.preventDefault();
+  //   var currentHref = $(this).attr('name');
+  //   $('html, body').animate({
+  //       scrollTop: getSectionOffsetID(currentHref)
+  //   }, 2000);
+  //   activeLink(this);
+  //  })
+
+  function getSectionOffsetID(area)
+  {
+    var sectionSelector = "#section-"+area+"-link";
+    return $(sectionSelector).offset().top-70;
+  }
+  function activeLink(selector)
+  {
     $(".hack-links a").each(function(){ 
      if($(this).hasClass('active')){
          $(this).removeClass('active');
       }
     });
-    $(this).addClass('active');
-    var currentHref = $(this).attr('name');
-    $('html, body').animate({
-        scrollTop: $(currentHref).offset().top-60
-    }, 10);
-
-   })
-
+    $(selector).addClass('active');
+  }
 
 });
 </script>
