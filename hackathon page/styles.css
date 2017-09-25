@@ -9,6 +9,7 @@ body {
   font-family: Nordea;
   background-color: #FEEDE5;
   min-width: 1180px;
+  font-size: 25px;
 }
  
 .inner-wrapper {
@@ -62,6 +63,11 @@ body {
   margin: 0 auto;
   width: 90%;
   display: block;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 25px;
 }
  
 canvas{
