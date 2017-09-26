@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Nordea;
-  background-color: #FEEDE5;
-  min-width: 1180px;
+  background-color: #fdece4;
+  /*background-color: #ffffff;*/
   font-size: 25px;
 }
  
@@ -73,3 +73,307 @@ li {
 canvas{
   cursor: url('pics/cursor.png'),auto;
 }
+
+
+/*css written by Min*/
+
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nav_bar {
+  background-color: #0000a0;
+  height: 60px;
+  top:0px;
+  width: 100%;
+  min-width: 1100px;
+}
+
+.hack-links ul {
+    margin: 0;
+}
+
+.hack-links li {
+  display: inline-block;
+  margin-top: 4px;
+}
+.hack-links a {
+  line-height: 60px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hack-links a:hover{
+  color: #3399ff;
+}
+.logo-img{
+  height:40px;
+  padding:10px 20px;
+  display: inline-block;
+}
+.hack-links{
+  display: inline-block;
+  float: right;
+} 
+#section-frontpage {
+  height:100vh;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  background-image: url("pics/hackathon-min.jpg");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  color: #ffffff;
+}
+.frontpage-text{
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10vh;
+}
+.frontpage-title{
+  font-size: 80px;
+  line-height: 150px;
+}
+.frontpage-time, .frontpage-location{
+  font-size: 50px;
+  line-height: 80px;
+}
+.signup-button{
+  margin-top: 50px;
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 30px;
+  background-color: #3399ff;
+  text-decoration: none;
+  line-height: 50px;
+  color: #ffffff;
+}
+.signup-button:hover{
+  background-color: #0000ff;
+  color: #3399ff;
+}
+#video-sharing{
+  width: 100%;
+  min-height:525px;
+  background-color: #0000a0;
+  clear: both;
+}
+#quote,#video-section{
+  width: 49%;
+  float: left;
+}
+#quote{
+  text-align: right;
+  font-weight: bold;
+  color: #f0c1ae;
+  padding-bottom: 60px;
+}
+.quote-setence,.quote-person{
+  padding-left: 10%;
+  width: 80%;
+  }
+.quote-setence{
+  padding-top: 40px;
+  font-size: 70px;
+  line-height: 100px;
+}
+.quote-person{
+  font-size: 30px;
+}
+.location-title,.schedule-title
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 100px;
+  color:#f0c1ae;
+}
+.location-content{
+  font-size: 60px;
+  font-weight: bold;
+  color:#0000a0;
+}
+
+.about-intro{
+  background-color:#FBDACA;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold; 
+  padding-top: 50px;
+}
+.about-title{
+  color: #030289;
+  font-size: 60px;
+  line-height: 100px;
+}
+.about-theme{
+  color: #66A4E5;
+  font-size: 40px;
+  line-height: 100px;
+}
+.about-content{
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+.about-image{
+  width: 80%;
+  margin:60px 10%;
+}
+.about-phrase-title,.about-phrase-content{
+  width: 90%;
+}
+.about-phrase-title{
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 150px;
+  color: #FBDAC9;
+}
+.about-phrase-content{
+  font-size: 18px;
+}
+.about-image-section,.about-phrase{
+  width: 50%;
+  float: left;
+}
+.daily-schedule{
+  background-color: #ffffff;
+  width: 100%;
+  margin: 40px auto;
+}
+.daily-schedule-title{
+  font-weight: bold;
+  font-size: 40px;
+  color: #06057D;
+  padding: 20px 70px; 
+}
+.schedule-content
+{
+  background-color: #ffffff: 
+  padding: 30px 50px;
+}
+.schedule-line{
+  clear: both;
+  overflow: hidden;
+}
+.schedule-line-time,.schedule-line-content{
+  float: left;
+  margin: 30px 20px 20px 20px;
+  min-height: 150px;
+}
+.schedule-line-time{
+  width: 25%;
+  text-align: center;
+  border-right: solid 1px #FBDAC9;
+}
+.schedule-line-content{
+  width: 60%;
+  font-size: 25px;
+/*  line-height: 150px;*/
+}
+.schedule-item{
+  height: 120px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.CIO-quote{
+  background-color: #0000a0;
+  min-height: 200px;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+.CIO-image-column,.CIO-quote-column{
+  float: left;
+}
+.CIO-image-column{
+  width: 30%;
+}
+.CIO-image{
+  width: 70%;
+  padding: 80px 20px 80px 80px;
+}
+.CIO-quote-column{
+width: 65%;
+  padding-bottom: 80px;
+  padding-left: 20px;
+}
+.CIO-quote-setence{
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #FBDACA;
+  font-size: 40px;
+  font-weight: bold;
+}
+.CIO-name{
+  font-weight: bold;
+  font-size: 25px;
+  color:#4888C8; 
+}
+.signup-reminder{
+  width: 90%;
+  margin: 100px auto;
+  font-weight: bold;
+}
+.signup-reminder-content{
+  font-size: 40px;
+  color: #0000a0; 
+}
+.signup-reminder-button a{
+  text-align: center;
+  cursor: pointer;
+}
+.footer{
+  width: 100%;
+  background-color: #0000a0;
+  text-align: center;
+  padding: 20px 0px;
+  color: #ffffff;
+}
+.footer p{ 
+  margin: 5px 50px;
+}
+a.active{
+  color: #3399ff;
+}
+.gap-block
+{
+  width: 100%;
+  height: 60px;
+}
+.contact-person-block{
+  display: inline-block;
+  margin: 50px;
+  text-align: center;
+  color: white;
+}
+.contact-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.contact-person-name:hover {
+    text-decoration: underline !important;
+}
+/*.hack-wrapper
+{
+  max-width: 1100px;
+  width: 1100px !important;
+  margin: 0 auto; 
+}*/
