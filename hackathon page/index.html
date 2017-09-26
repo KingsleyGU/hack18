@@ -3,279 +3,11 @@
   <head>
     <title>#hack18</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-.navbar-fixed {
-    top: 0;
-    z-index: 100;
-  position: fixed;
-}
-
-#nav_bar {
-  background-color: #0000a0;
-  height: 60px;
-  top:0px;
-  width: 100%;
-  min-width: 1180px;
-}
-
-.hack-links ul {
-    margin: 0;
-}
-
-.hack-links li {
-  display: inline-block;
-  margin-top: 4px;
-}
-.hack-links a {
-  line-height: 60px;
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  width: 150px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.hack-links a:hover{
-  color: #3399ff;
-}
-.logo-img{
-  height:30px;
-  padding:15px 20px;
-  display: inline-block;
-}
-.hack-links{
-  display: inline-block;
-  float: right;
-} 
-#section-frontpage {
-  height:100vh;
-  width: 100%;
-  font-weight: bold;
-  text-align: center;
-  background-image: url("pics/hackathon.jpg");
-  background-size: 100% auto;
-  color: #ffffff;
-}
-.frontpage-text{
-  position: absolute;
-  bottom: 0px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10vh;
-}
-.frontpage-title{
-  font-size: 80px;
-  line-height: 150px;
-}
-.frontpage-time, .frontpage-location{
-  font-size: 50px;
-  line-height: 80px;
-}
-.signup-button{
-  margin-top: 50px;
-  display: inline-block;
-  padding: 0px 20px;
-  font-size: 30px;
-  background-color: #3399ff;
-  text-decoration: none;
-  line-height: 50px;
-  color: #ffffff;
-}
-.signup-button:hover{
-  background-color: #0000ff;
-  color: #3399ff;
-}
-#video-sharing{
-  width: 100%;
-  height:500px;
-  background-color: #0000a0;
-  clear: both;
-}
-#quote,#video-section{
-  width: 49%;
-  float: left;
-}
-#quote{
-  text-align: right;
-  font-weight: bold;
-  color: #f0c1ae;
-}
-.quote-setence,.quote-person{
-  padding-left: 10%;
-  width: 80%;
-  }
-.quote-setence{
-  padding-top: 40px;
-  font-size: 70px;
-  line-height: 120px;
-}
-.quote-person{
-  font-size: 30px;
-}
-.location-title,.schedule-title
-{
-  text-align: center;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 100px;
-  color:#f0c1ae;
-}
-.location-content{
-  font-size: 60px;
-  font-weight: bold;
-  color:#0000a0;
-}
-
-.about-intro{
-  background-color:#FBDACA;
-  height: 250px;
-  width: 100%;
-  text-align: center;
-  font-weight: bold; 
-  padding-top: 50px;
-}
-.about-title{
-  color: #030289;
-  font-size: 60px;
-  line-height: 100px;
-}
-.about-theme{
-  color: #66A4E5;
-  font-size: 40px;
-  line-height: 100px;
-}
-.about-content{
-  width: 100%;
-  clear: both;
-  overflow: hidden;
-  padding-bottom: 40px;
-}
-.about-image{
-  width: 80%;
-  margin:60px 10%;
-}
-.about-phrase-title,.about-phrase-content{
-  width: 90%;
-}
-.about-phrase-title{
-  margin-top: 60px;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 150px;
-  color: #FBDAC9;
-}
-.about-phrase-content{
-  font-size: 18px;
-}
-.about-image-section,.about-phrase{
-  width: 50%;
-  float: left;
-}
-.daily-schedule{
-  background-color: #ffffff;
-  width: 100%;
-  margin: 40px auto;
-}
-.daily-schedule-title{
-  font-weight: bold;
-  font-size: 40px;
-  color: #06057D;
-  padding: 20px 70px; 
-}
-.schedule-content
-{
-  background-color: #ffffff: 
-  padding: 30px 50px;
-}
-.schedule-line{
-  clear: both;
-  overflow: hidden;
-}
-.schedule-line-space,.schedule-line-content{
-  float: left;
-  margin: 0px 20px 20px 20px;
-  min-height: 150px;
-}
-.schedule-line-space{
-  width: 15%;
-
-  border-right: solid 1px #FBDAC9;
-}
-.schedule-line-content{
-  width: 70%;
-  font-size: 25px;
-  line-height: 150px;
-}
-.CIO-quote{
-  background-color: #0000a0;
-  min-height: 200px;
-  width: 100%;
-  clear: both;
-  overflow: hidden;
-}
-.CIO-image-column,.CIO-quote-column{
-  float: left;
-}
-.CIO-image-column{
-  width: 30%;
-}
-.CIO-image{
-  width: 70%;
-  padding: 80px 20px 80px 80px;
-}
-.CIO-quote-column{
-width: 65%;
-}
-.CIO-quote-setence{
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: #FBDACA;
-  font-size: 40px;
-  font-weight: bold;
-}
-.CIO-name{
-  font-weight: bold;
-  font-size: 25px;
-  color:#4888C8; 
-}
-.signup-reminder{
-  width: 90%;
-  margin: 100px auto;
-  font-weight: bold;
-}
-.signup-reminder-content{
-  font-size: 40px;
-  color: #0000a0; 
-}
-.signup-reminder-button a{
-  text-align: center;
-  cursor: pointer;
-}
-.footer{
-  width: 100%;
-  background-color: #0000a0;
-  text-align: right;
-  padding: 20px 0px;
-  color: #ffffff;
-}
-.footer p{ 
-  margin: 5px 50px;
-}
-a.active{
-  color: #3399ff;
-}
-.gap-block
-{
-  width: 100%;
-  height: 60px;
-}
-  </style>
   </head>
   <body>
 
-      <nav id='nav_bar'>
-        <img src="pics/Nordea-logo.svg" class="logo-img"> 
+      <nav id='nav_bar' class="hack-wrapper">
+        <!-- <img src="pics/Nordea-logo.svg" class="logo-img">  -->
         <img src="pics/hack.PNG" class="logo-img">
         <div class="hack-links">
           <ul>
@@ -289,7 +21,7 @@ a.active{
       </nav>
 
 
-      <div id="section-frontpage">
+      <div id="section-frontpage" class="hack-wrapper">
         <div class="frontpage-text">
           <div class="frontpage-title section-title">#HACK18</div>
           <div class="frontpage-time">January 2018</div>
@@ -298,15 +30,15 @@ a.active{
         </div>
       </div>
 
-      <div id="section-about-link" style=" background-color: #FBDACA;"></div>
-      <div id="section-about">
+      <div id="section-about-link" style=" background-color: #FBDACA;" class="hack-wrapper"></div>
+      <div id="section-about" class="hack-wrapper">
           <div class="about-intro">
               <div class="about-title">Let's hack collaboration together!</div>
               <div class="about-theme">A hackathon for everyone in Trading Technology</div>
           </div>
           <div class="about-content">
               <div class="about-image-section">
-                  <img class="about-image" src="pics/collabration.jpg" style="margin-top: 235px;">
+                  <img class="about-image" src="pics/collabration-min.jpg" style="margin-top: 235px;">
               </div>
               <div class="about-phrase">
                   <div class="about-phrase-title">About</div>
@@ -346,9 +78,9 @@ At the end of the second day, you demonstrate what your team has come up with.</
           </div>
       </div>
 
-      <div class="gap-block" id="section-attendee-link"></div>
+      <div class="gap-block" id="section-attendee-link" class="hack-wrapper"></div>
 
-      <div id="section-attendee">
+      <div id="section-attendee" class="hack-wrapper">
           <div class="inner-wrapper">
               <div class="inner-content">
                   <!-- <div style="margin: 15px auto 0px auto; width: 120px"><img src="icons/filled-id-card-2.png" alt="Who?" style="width: 100%"></div> -->
@@ -358,7 +90,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
 <p>Everybody in Trading Technology is invited. We need all your skills and brains to craft the coolest ideas. Let's hack collaboration together!</p>
                   <div class="columns">
                       <div class="column">
-                          <img src="pics/dev_analyst.jpg" alt="Developers & Analysts">
+                          <img src="pics/dev_analyst-min.jpg" alt="Developers & Analysts">
                           <h2>Dev or Analyst</h2>
                           <ul>
                              <li>Do you enjoy being tested on your analytical and problem solving skills?</li>
@@ -367,7 +99,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
                           </ul>
                       </div>
                       <div class="column">
-                          <img src="pics/pm_agile.jpg" alt="Developers & Analysts">
+                          <img src="pics/pm_agile-min.jpg" alt="Developers & Analysts">
                           <h2>PM or Agile</h2>
                           <ul>
                             <li>Are you highly organised?</li>
@@ -377,7 +109,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
                           </ul>
                       </div>
                       <div class="column">
-                          <img src="pics/business.jpg" alt="Developers & Analysts">
+                          <img src="pics/business-min.jpg" alt="Developers & Analysts">
                           <h2>Business</h2>
                           <ul>
                               <li>Do you have the next breakthrough idea?</li>
@@ -390,9 +122,9 @@ At the end of the second day, you demonstrate what your team has come up with.</
           </div>
       </div>
 
-      <div class="gap-block" id="section-location-link"></div>
+      <div class="gap-block" id="section-location-link" class="hack-wrapper"></div>
 
-      <div id="section-location" style="min-height: 150px;">
+      <div id="section-location" style="min-height: 150px;" class="hack-wrapper">
           <div class="inner-content">
               <div class="location-title">Location</div>
               <div class="location-content">The location and venue will be announced soon, check this site for updates.</div>
@@ -402,9 +134,9 @@ At the end of the second day, you demonstrate what your team has come up with.</
           </div>  
       </div>
 
-      <div class="gap-block" id="section-schedule-link"></div>
-
-      <div id="section-schedule" >
+<!-- comment this out if don't want to display schedule -->
+      <div class="gap-block" id="section-schedule-link" class="hack-wrapper"></div>
+      <div id="section-schedule" class="hack-wrapper">
           <div class="inner-content">
               <div class="schedule-title">Schedule</div>
               <div class="schedule-content">
@@ -413,7 +145,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
                           Day 1
                       </div>
                       <div class="schedule-line">
-                          <div class="schedule-line-space"></div>
+                          <div class="schedule-line-time"></div>
                           <div class="schedule-line-content"> The schedule would be announced soon</div>
                       </div>
                   </div>
@@ -423,8 +155,34 @@ At the end of the second day, you demonstrate what your team has come up with.</
                           Day 2
                       </div>
                       <div class="schedule-line">
-                          <div class="schedule-line-space"></div>
-                          <div class="schedule-line-content"> The schedule would be announced soon</div>
+                          <div class="schedule-line-time">
+                            <div class="schedule-item-time schedule-item">
+                              9:00-10:00
+                            </div>
+                            <div class="schedule-item-time schedule-item">
+                              10:00-12:00
+                            </div>
+                            <div class="schedule-item-time schedule-item">
+                              12:00-13:00
+                            </div>
+                            <div class="schedule-item-time schedule-item">
+                              15:00-21:00
+                            </div>                            
+                          </div>
+                          <div class="schedule-line-content"> 
+                            <div class="schedule-item-content schedule-item">
+                              Breakfast, with more space in case that there should be more information
+                            </div>
+                            <div class="schedule-item-content schedule-item">
+                              Something, with more space in case that there should be more information
+                            </div>
+                            <div class="schedule-item-content schedule-item">
+                              Lunch, with more space in case that there should be more information
+                            </div>
+                            <div class="schedule-item-content schedule-item">
+                              Something, with more space in case that there should be more information
+                            </div>
+                          </div>
                       </div>
                   </div>
 
@@ -433,15 +191,21 @@ At the end of the second day, you demonstrate what your team has come up with.</
                           Day 3
                       </div>
                       <div class="schedule-line">
-                          <div class="schedule-line-space"></div>
+                          <div class="schedule-line-time"></div>
                           <div class="schedule-line-content"> The schedule would be announced soon</div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <div class="gap-block" id="section-contact-link"></div>
-      <div id="section-contact">
+
+
+
+
+
+
+      <div class="gap-block" id="section-contact-link" class="hack-wrapper"></div>
+      <div id="section-contact" class="hack-wrapper">
           <div class="CIO-quote">
               <div class="CIO-image-column">
                   <img class="CIO-image" src="pics/alan.jpg">
@@ -463,15 +227,22 @@ At the end of the second day, you demonstrate what your team has come up with.</
               </div>
           </div>
           <div class="footer">
-            <img src="pics/darius.JPG" style="border-radius: 50%; width: 300px">
-            <img src="pics/pavol.JPG" style="border-radius: 50%; width: 300px">
-            <img src="pics/therese.JPG" style="border-radius: 50%; width: 300px">
-          
-              <p style="font-weight: bold;">Contact</p>
-              <p>Nordea Markets</p>
-              <p>Strandgade 3</p>
-              <p>1401 Copenhagen K</p>
-              <p>Phone: 3333 3333</p>
+            <p style="font-weight: bold;">Contact People</p>
+            <a href="mailto:someone@yoursite.com?subject=hackathon" class="contact-mail-link">
+              <div class="contact-person-block">
+                  <img src="pics/darius.JPG" class="contact-image">
+                  <div class="contact-person-name">Darius Romosan</div>
+              </div>
+              <div class="contact-person-block">
+                  <img src="pics/pavol.JPG" class="contact-image">
+                  <div class="contact-person-name">Pavol Hronsky</div>
+              </div>
+              <div class="contact-person-block">
+                  <img src="pics/therese.JPG" class="contact-image">
+                  <div class="contact-person-name">Therese Magnusson</div>
+              </div>
+            </a>
+            <!-- <p>Nordea Markets</p> -->
           </div>
       </div>
 
@@ -487,7 +258,11 @@ $(document).ready(function() {
   var aboutOffset = getSectionOffsetID("about");
   var attendeeOffset = getSectionOffsetID("attendee");
   var locationOffset = getSectionOffsetID("location");
+
+
+  // comment this out if don't want to display schedule
   var scheduleOffset = getSectionOffsetID("schedule");
+
   var contactOffset = getSectionOffsetID("contact");
 
   $(window).scroll(function () {
@@ -511,10 +286,14 @@ $(document).ready(function() {
       {
         activeLink("#location-link");
       }
+      // comment this out if don't want to display schedule
       if(topOffsetNavBar>=scheduleOffset)
       {
         activeLink("#schedule-link");
       }
+
+
+
       if(topOffsetNavBar>contactOffset)
       {
         activeLink("#contact-link");
