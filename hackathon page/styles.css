@@ -89,12 +89,13 @@ canvas{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
    z-index: 1000;
+   display: none;
 }
 #nav-toggle{
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left:190px;
+  left:0px;
   height: 80px;
   background-color: rgba(0,0,255, 0.8);
   padding-top: 70px;
