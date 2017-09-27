@@ -6,19 +6,23 @@
   </head>
   <body>
 
-      <nav id='nav_bar' class="hack-wrapper">
+      <nav id='nav_bar'>
         <!-- <img src="pics/Nordea-logo.svg" class="logo-img">  -->
         <img src="pics/hack.PNG" class="logo-img">
         <div class="hack-links">
           <ul>
-            <li><a href="#section-about-link" id="about-link" name="about" class="active">About</a></li>
-            <li><a href="#section-attendee-link" id="attendee-link" name="attendee">Attendees</a></li>
-            <li><a href="#section-location-link" id="location-link" name="location">Location</a></li>
-            <li><a href="#section-schedule-link" id="schedule-link" name="schedule">Schedule</a></li>
-            <li><a href="#section-contact-link" id="contact-link" name="contact">Contact</a></li>
+            <li><a href="#section-about" id="about-link" name="about" class="active">About</a></li>
+            <li><a href="#section-attendee" id="attendee-link" name="attendee">Attendees</a></li>
+            <li><a href="#section-location" id="location-link" name="location">Location</a></li>
+            <li><a href="#section-schedule" id="schedule-link" name="schedule">Schedule</a></li>
+            <li><a href="#section-contact" id="contact-link" name="contact">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <div id="nav-toggle">
+        <img id="toggle-nav-left" src="pics/left.svg">
+        <img id="toggle-nav-right" src="pics/right.svg" style="display: none;">
+      </div>
 
 
       <div id="section-frontpage" class="hack-wrapper">
@@ -30,7 +34,7 @@
         </div>
       </div>
 
-      <div id="section-about-link" style=" background-color: #FBDACA;" class="hack-wrapper"></div>
+      <!-- <div id="section-about-link" style=" background-color: #FBDACA;" class="hack-wrapper"></div> -->
       <div id="section-about" class="hack-wrapper">
           <div class="about-intro">
               <div class="about-title">Let's hack collaboration together!</div>
@@ -78,13 +82,13 @@ At the end of the second day, you demonstrate what your team has come up with.</
           </div>
       </div>
 
-      <div class="gap-block" id="section-attendee-link" class="hack-wrapper"></div>
+      <!-- <div class="gap-block" id="section-attendee-link" class="hack-wrapper"></div> -->
 
       <div id="section-attendee" class="hack-wrapper">
           <div class="inner-wrapper">
               <div class="inner-content">
                   <!-- <div style="margin: 15px auto 0px auto; width: 120px"><img src="icons/filled-id-card-2.png" alt="Who?" style="width: 100%"></div> -->
-                  <h1 style="margin-top: 0px;">Who can join?</h1>
+                  <h1>Who can join?</h1>
 <p>#HACK18 is for everyone working within Trading Technolgy in Denmark, Sweden, Finland, Norway or Poland.</p>
 <p>Is your daily role a developer, a project manager, an analyst, an architect, a subject matter expert or maybe an agile coach? Do you want to network, meet colleagues from other teams and solve problems together? Do you want to develop yourself and maybe try a role you are usually not working in? At #HACK18 we need the structured skills from our project managers, the analytical skills from our analysts, and the coding skills from out developers.</p>
 <p>Everybody in Trading Technology is invited. We need all your skills and brains to craft the coolest ideas. Let's hack collaboration together!</p>
@@ -122,7 +126,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
           </div>
       </div>
 
-      <div class="gap-block" id="section-location-link" class="hack-wrapper"></div>
+      <!-- <div class="gap-block" id="section-location-link" class="hack-wrapper"></div> -->
 
       <div id="section-location" style="min-height: 150px;" class="hack-wrapper">
           <div class="inner-content">
@@ -135,7 +139,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
       </div>
 
 <!-- comment this out if don't want to display schedule -->
-      <div class="gap-block" id="section-schedule-link" class="hack-wrapper"></div>
+      <!-- <div class="gap-block" id="section-schedule-link" class="hack-wrapper"></div> -->
       <div id="section-schedule" class="hack-wrapper">
           <div class="inner-content">
               <div class="schedule-title">Schedule</div>
@@ -204,7 +208,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
 
 
 
-      <div class="gap-block" id="section-contact-link" class="hack-wrapper"></div>
+      <!-- <div class="gap-block" id="section-contact-link" class="hack-wrapper"></div> -->
       <div id="section-contact" class="hack-wrapper">
           <div class="CIO-quote">
               <div class="CIO-image-column">
@@ -238,7 +242,7 @@ At the end of the second day, you demonstrate what your team has come up with.</
                   <div class="contact-person-name">Pavol Hronsky</div>
               </div>
               <div class="contact-person-block">
-                  <img src="pics/therese.JPG" class="contact-image">
+                  <img src="pics/therese.jpg" class="contact-image">
                   <div class="contact-person-name">Therese Magnusson</div>
               </div>
             </a>
@@ -268,7 +272,6 @@ $(document).ready(function() {
   $(window).scroll(function () {
     var topOffset = $(window).scrollTop();
     if (topOffset > 60) {
-      $('#nav_bar').addClass('navbar-fixed');
       var topOffsetNavBar= topOffset;
       if(topOffsetNavBar<aboutOffset)
       {
@@ -291,16 +294,10 @@ $(document).ready(function() {
       {
         activeLink("#schedule-link");
       }
-
-
-
       if(topOffsetNavBar>contactOffset)
       {
         activeLink("#contact-link");
       }
-    }
-    if (topOffset < 61) {
-      $('#nav_bar').removeClass('navbar-fixed');
     }
   });
   $( window ).resize(function() {
@@ -310,19 +307,21 @@ $(document).ready(function() {
       scheduleOffset = getSectionOffsetID("schedule");
       contactOffset = getSectionOffsetID("contact");
   });
-  // $(".hack-links a").click(function(){
-  //   event.preventDefault();
-
-  //   var currentHref = $(this).attr('name');
-  //   $('html, body').animate({
-  //       scrollTop: getSectionOffsetID(currentHref)
-  //   }, 2000);
-  //   activeLink(this);
-  //  })
+  $("#nav-toggle").click(function(){
+    $("#toggle-nav-right").toggle();
+    $("#toggle-nav-left").toggle();
+    $("#nav_bar").toggle();
+    if ( $("#nav_bar").css('display') == 'none' ){
+      $(this).css({left: '0px'});
+    }
+    else{
+      $(this).css({left: '190px'});
+    }
+  })
 
   function getSectionOffsetID(area)
   {
-    var sectionSelector = "#section-"+area+"-link";
+    var sectionSelector = "#section-"+area;
     return $(sectionSelector).offset().top-70;
   }
   function activeLink(selector)
