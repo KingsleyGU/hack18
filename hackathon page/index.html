@@ -308,10 +308,10 @@ $(document).ready(function() {
       contactOffset = getSectionOffsetID("contact");
   });
   $("#nav-toggle").mouseenter(function(){
-    toggleEffect();
+    toggleEffect(true);
   })
   $("#nav_bar").mouseleave(function(){
-    toggleEffect();
+    toggleEffect(false);
   })
   function getSectionOffsetID(area)
   {
@@ -327,16 +327,20 @@ $(document).ready(function() {
     });
     $(selector).addClass('active');
   }
-  function toggleEffect()
+  function toggleEffect(d)
   {
-    $("#toggle-nav-right").toggle();
-    $("#toggle-nav-left").toggle();
-    $("#nav_bar").toggle();
-    if ( $("#nav_bar").css('display') === 'none' ){
-      $("#nav-toggle").css({left: '0px'});
-    }
-    else{
-      $("#nav-toggle").css({left: '190px'});
+    if (d) {
+      $('#nav-toggle').hide();
+      //$("#toggle-nav-right").hide();
+      //$("#toggle-nav-left").show();
+      $("#nav_bar").show();
+      //$("#nav-toggle").css({left: '190px'});
+    } else {
+      $('#nav-toggle').show();
+      //$("#toggle-nav-right").show();
+      //$("#toggle-nav-left").hide();
+      $("#nav_bar").hide();
+      //$("#nav-toggle").css({left: '0px'});
     }
   }
 });
