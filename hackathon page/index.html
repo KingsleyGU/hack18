@@ -307,18 +307,12 @@ $(document).ready(function() {
       scheduleOffset = getSectionOffsetID("schedule");
       contactOffset = getSectionOffsetID("contact");
   });
-  $("#nav-toggle").click(function(){
-    $("#toggle-nav-right").toggle();
-    $("#toggle-nav-left").toggle();
-    $("#nav_bar").toggle();
-    if ( $("#nav_bar").css('display') == 'none' ){
-      $(this).css({left: '0px'});
-    }
-    else{
-      $(this).css({left: '190px'});
-    }
+  $("#nav-toggle").mouseenter(function(){
+    toggleEffect();
   })
-
+  $("#nav_bar").mouseleave(function(){
+    toggleEffect();
+  })
   function getSectionOffsetID(area)
   {
     var sectionSelector = "#section-"+area;
@@ -333,7 +327,18 @@ $(document).ready(function() {
     });
     $(selector).addClass('active');
   }
-
+  function toggleEffect()
+  {
+    $("#toggle-nav-right").toggle();
+    $("#toggle-nav-left").toggle();
+    $("#nav_bar").toggle();
+    if ( $("#nav_bar").css('display') === 'none' ){
+      $("#nav-toggle").css({left: '0px'});
+    }
+    else{
+      $("#nav-toggle").css({left: '190px'});
+    }
+  }
 });
 </script>
 </html>
