@@ -78,28 +78,38 @@ canvas{
 /*css written by Min*/
 
 
-.navbar-fixed {
-    top: 0;
-    z-index: 100;
-  position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 #nav_bar {
-  background-color: #0000a0;
-  height: 60px;
-  top:0px;
-  width: 100%;
-  min-width: 1100px;
+  background-color: rgba(0,0,255, 0.8);
+  position: fixed;
+  height:600px;
+  top: 50%;
+  width: 190px;
+  transform: translateY(-50%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+   z-index: 1000;
 }
+#nav-toggle{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left:190px;
+  height: 80px;
+  background-color: rgba(0,0,255, 0.8);
+  padding-top: 70px;
+  padding-right: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
 
+}
 .hack-links ul {
     margin: 0;
 }
 
 .hack-links li {
-  display: inline-block;
   margin-top: 4px;
 }
 .hack-links a {
@@ -115,14 +125,10 @@ canvas{
   color: #3399ff;
 }
 .logo-img{
-  height:40px;
-  padding:10px 20px;
+  height:80px;
+  padding:40px 0px 0px 40px;
   display: inline-block;
 }
-.hack-links{
-  display: inline-block;
-  float: right;
-} 
 #section-frontpage {
   height:100vh;
   width: 100%;
@@ -166,7 +172,7 @@ canvas{
 }
 #video-sharing{
   width: 100%;
-  min-height:525px;
+  min-height:500px;
   background-color: #0000a0;
   clear: both;
 }
@@ -178,7 +184,6 @@ canvas{
   text-align: right;
   font-weight: bold;
   color: #f0c1ae;
-  padding-bottom: 60px;
 }
 .quote-setence,.quote-person{
   padding-left: 10%;
@@ -199,6 +204,7 @@ canvas{
   font-size: 80px;
   line-height: 100px;
   color:#f0c1ae;
+  padding: 50px 0px;
 }
 .location-content{
   font-size: 60px;
@@ -208,11 +214,10 @@ canvas{
 
 .about-intro{
   background-color:#FBDACA;
-  height: 250px;
   width: 100%;
   text-align: center;
   font-weight: bold; 
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 .about-title{
   color: #030289;
